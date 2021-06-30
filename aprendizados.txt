@@ -1,0 +1,7 @@
+closures - js
+
+FIREBASE
+ - https://console.firebase.google.com/?hl=pt-br&pli=1
+ - lembrar de: quando subir em algum dominio, adicionar dominio
+
+ Bancos: firestore (relacional - cria tabelas) / realtime database (posso colocar coisas la denttro em tempo real)
