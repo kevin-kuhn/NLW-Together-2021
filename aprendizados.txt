@@ -3,5 +3,15 @@ closures - js
 FIREBASE
  - https://console.firebase.google.com/?hl=pt-br&pli=1
  - lembrar de: quando subir em algum dominio, adicionar dominio
+ - ouvir database.ref(`rooms/${roomId}`).on("value", room => {...})significa ouvir toda e qualquer alteração nas listas, caso ouver muitas perguntas
+   este script acaba não sendo performatico!
+   utilizar: doc: firebase -> section-event-types -> child_added, etc
 
  Bancos: firestore (relacional - cria tabelas) / realtime database (posso colocar coisas la denttro em tempo real)
+
+
+WEBPACK: Module Bundler
+ - os imports passam por ele, e ele entende qual formato ele tem que converter para ser entendido pelo JS
+
+Lib toast: react-hot-toast
+
