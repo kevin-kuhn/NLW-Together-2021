@@ -1,7 +1,6 @@
 import { FC } from "react"
 
-import "./question.scss"
-
+import "./styles.scss"
 
 type QuestionProps = {
 	content: string
