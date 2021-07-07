@@ -7,7 +7,7 @@ FIREBASE
    este script acaba não sendo performatico!
    utilizar: doc: firebase -> section-event-types -> child_added, etc
 
- Bancos: firestore (relacional - cria tabelas) / realtime database (posso colocar coisas la denttro em tempo real)
+ Bancos: firestore (nao relacional - parecido com mongo - tem realtime também) / realtime database (posso colocar coisas la denttro em tempo real)
 
 
 WEBPACK: Module Bundler
