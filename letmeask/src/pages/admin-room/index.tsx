@@ -2,7 +2,6 @@ import { useHistory, useParams } from "react-router-dom"
 import { Button } from "../../components/button"
 import { Question } from "../../components/question"
 import { RoomCode } from "../../components/room-code"
-import { useAuth } from "../../hooks/useAuth"
 import { useRoom } from "../../hooks/useRoom"
 
 import logoImg from "../../assets/images/logo.svg"
@@ -18,7 +17,6 @@ type RoomParams = {
 }
 
 export const AdminRoom = () => {
-	// const { user } = useAuth()
 	const params = useParams<RoomParams>()
 
 	const roomId = params.id
