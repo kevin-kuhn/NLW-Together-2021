@@ -12,7 +12,7 @@ import { Button } from "../../components/button"
 import "../../styles/auth.scss"
 
 export const NewRoom = () => {
-	const { signInWithGoogle, user } = useAuth()
+	const { user } = useAuth()
 	const history = useHistory()
 	const [newRoom, setNewRoom] = useState("")
 

@@ -1,4 +1,5 @@
 import { FC } from "react"
+import classNames from "classnames"
 
 import "./styles.scss"
 
@@ -8,11 +9,25 @@ type QuestionProps = {
 		name: string
 		avatar: string
 	}
+	isAnswered?: boolean
+	isHighlighted?: boolean
 }
 
-export const Question: FC<QuestionProps> = ({ content, author, ...props }) => {
+export const Question: FC<QuestionProps> = ({
+	content,
+	author,
+	isAnswered = false,
+	isHighlighted = false,
+	...props
+}) => {
 	return (
-		<div className='question'>
+		<div
+			className={classNames(
+				"question",
+				{ answered: isAnswered },
+				{ highlighted: isHighlighted && !isAnswered }
+			)}
+		>
 			<p>{content}</p>
 			<footer>
 				<div className='user-info'>

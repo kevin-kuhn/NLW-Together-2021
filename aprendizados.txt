@@ -16,3 +16,10 @@ WEBPACK: Module Bundler
 Lib toast: react-hot-toast
 Lib modal: react-modal
 
+
+LIB CLASSNAMES
+ ANTES: className={`question ${isAnswered ? 'answered' : ''} ${isHighlighted ? 'highlighted' : 'highlighted'}`}
+ DEPOIS: className={classNames("question", { answered: isAnswered }, { highlighted: isHighlighted })}
+
+DEPLOY
+ - .env.local só vai ser pego quando eu fizer deploy com meu computador, caso utilize o git-hub, pesquisar sobre "github actions enviroment variables"
