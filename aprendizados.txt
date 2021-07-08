@@ -22,4 +22,5 @@ LIB CLASSNAMES
  DEPOIS: className={classNames("question", { answered: isAnswered }, { highlighted: isHighlighted })}
 
 DEPLOY
+ - https://create-react-app.dev/docs/deployment#firebase
  - .env.local só vai ser pego quando eu fizer deploy com meu computador, caso utilize o git-hub, pesquisar sobre "github actions enviroment variables"
